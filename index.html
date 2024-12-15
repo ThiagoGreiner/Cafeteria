@@ -39,11 +39,11 @@
     </nav>
     <main>
       <!-- Carousel -->
-      <header id="carouselExampleCaptions" class="carousel slide">
+      <header id="coffee-shop" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#coffee-shop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#coffee-shop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#coffee-shop" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -68,15 +68,16 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#coffee-shop" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#coffee-shop" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </header>
+      
       <!-- Quote -->
       <figure>
         <blockquote class="blockquote">
@@ -87,6 +88,7 @@
         </figcaption>
       </figure>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
       <!-- Cards -->
       <section id="about" class="container">
         <div class="row">
@@ -122,6 +124,30 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="container mt-5 mb-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="espresso-tab" data-bs-toggle="tab" data-bs-target="#espresso-tab-pane" type="button" role="tab" aria-controls="espresso-tab-pane" aria-selected="true">Expressos</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cappuccino-tab" data-bs-toggle="tab" data-bs-target="#cappuccino-tab-pane" type="button" role="tab" aria-controls="cappuccino-tab-pane" aria-selected="false">Capuccinos</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="iced-coffee-tab" data-bs-toggle="tab" data-bs-target="#iced-coffee-tab-pane" type="button" role="tab" aria-controls="iced-coffee-tab-pane" aria-selected="false">Gelados</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="specials-coffee-tab" data-bs-toggle="tab" data-bs-target="#specials-coffee-tab-pane" type="button" role="tab" aria-controls="specials-coffee-tab-pane" aria-selected="false">Especiais</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="espresso-tab-pane" role="tabpanel" aria-labelledby="espresso-tab" tabindex="0">Café Expresso</div>
+          <div class="tab-pane fade" id="cappuccino-tab-pane" role="tabpanel" aria-labelledby="cappuccino-tab" tabindex="0">Capuccinos</div>
+          <div class="tab-pane fade" id="iced-coffee-tab-pane" role="tabpanel" aria-labelledby="iced-coffee-tab" tabindex="0">Cafés Gelados</div>
+          <div class="tab-pane fade" id="specials-coffee-tab-pane" role="tabpanel" aria-labelledby="specials-coffee-tab" tabindex="0">Cafés Especiais</div>
         </div>
       </section>
     </main>
