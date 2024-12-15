@@ -23,5 +23,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <br>
 
 <p align="center">
-    <a href="">Visualize o projeto aqui</a>
+    <a href="https://thiagogreiner.github.io/Cafeteria/">Visualize o projeto aqui</a>
 </p>
