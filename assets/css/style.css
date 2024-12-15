@@ -37,3 +37,7 @@ main {
     height: 300px;
     object-fit: cover;
 }
+
+footer img {
+    width: 80px;
+}
