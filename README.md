@@ -4,14 +4,14 @@
 O Best Coffee é um projeto desenvolvido com o objetivo de aplicar os conhecimentos adquiridos sobre o framework Bootstrap.
 </p>
 
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>
+</p>
+
 <br>
 
 <p align="center">
   <img alt="Projeto Clone Youtube" src=".github/preview.jpg" width="100%">
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>
 </p>
 
 ## 🚀 Tecnologias
