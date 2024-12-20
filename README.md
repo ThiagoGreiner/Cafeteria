@@ -5,7 +5,8 @@ O Best Coffee é um projeto desenvolvido com o objetivo de aplicar os conhecimen
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-protótipo">Protótipo</a>
 </p>
 
 <br>
@@ -25,6 +26,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <br>
 
-<p align="center">
-    <a href="https://thiagogreiner.github.io/Cafeteria/">Visualize o projeto aqui</a>
-</p>
+## 🖥 Protótipo
+
+Você pode visualizar o protótipo web através [DESSE LINK](https://thiagogreiner.github.io/Cafeteria/))
