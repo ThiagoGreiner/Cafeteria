@@ -28,4 +28,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🖥 Protótipo
 
-Você pode visualizar o protótipo web através [DESSE LINK](https://thiagogreiner.github.io/Cafeteria/))
+Você pode visualizar o protótipo web através [DESSE LINK](https://thiagogreiner.github.io/Cafeteria/)
