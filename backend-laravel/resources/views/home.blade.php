@@ -8,6 +8,10 @@
 
     @include('components.about')
 
+    @include('components.menu')
+
+    @include('components.location')
+
     <section class="container mt-5 pt-5">
         <h1>Bem-vindo à Best Coffee</h1>
         <p>
