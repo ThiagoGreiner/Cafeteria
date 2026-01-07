@@ -3,7 +3,7 @@
     --bs-link-hover-color: #146c43;
 }
 
-.d-flex .btn {
+.nav-link .btn {
     --bs-btn-bg: #198754;
     --bs-btn-border-color: #146c43;
     --bs-btn-hover-bg: #146c43;
