@@ -38,9 +38,9 @@
             @endauth
 
             @guest
-              <li class="nav-item">
+              <button class="btn">
                 <a class="nav-link" href="{{ route('login') }}">Login</a>
-              </li>
+              </button>
             @endguest
 
             @auth
