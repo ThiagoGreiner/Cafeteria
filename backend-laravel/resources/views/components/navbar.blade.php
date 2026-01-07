@@ -37,6 +37,23 @@
               @endif
             @endauth
 
+            @guest
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">Login</a>
+              </li>
+            @endguest
+
+            @auth
+              <li class="nav-item">
+                <form method="POST" action="{{ route('logout') }}">
+                  @csrf
+                  <button class="nav-link btn btn-link" type="submit">
+                    Sair
+                  </button>
+                </form>
+              </li>
+            @endauth
+
           </div>
 
         </div>
