@@ -1,32 +1,36 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CoffeeController;
 
-// Home pública (cefeteria)
+// Home pública (cardápio)
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Dashboard admin
+//Dashboard (Breeze)
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+//Perfil do usuário
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/admin', function () {
-        return view('dashboard');
-    });
-});
+//Área ADMIN
+Route::middleware(['auth', 'admin'])
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function () {
 
-Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
-    Route::resource('coffees', CoffeeController::class);
-});
+        Route::get('/', function () {
+            return view('dashboard');
+        })->name('dashboard');
+
+        Route::resource('coffees', CoffeeController::class);
+    });
 
 require __DIR__.'/auth.php';
