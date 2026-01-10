@@ -1,6 +1,12 @@
+<!-- Layout da página-->
+
 @extends('layouts.site')
 
+<!-- Definidno titulo -->
+
 @section('title', 'Home')
+
+<!--Centeúdo da página inicial pública -->
 
 @section('content')
 
