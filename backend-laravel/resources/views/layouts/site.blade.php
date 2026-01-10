@@ -1,3 +1,4 @@
+<!-- Estrutura de página pública -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
