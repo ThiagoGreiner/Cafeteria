@@ -1,3 +1,5 @@
+ <!-- Navbar pública -->
+ 
  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         
         <div class="container-fluid">
@@ -30,7 +32,7 @@
             @auth
               @if(auth()->user()->is_admin)
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('dashboard') }}">
+                  <a class="nav-link" href="{{ route('admin.dashboard') }}">
                     Admin
                   </a>
                 </li>
