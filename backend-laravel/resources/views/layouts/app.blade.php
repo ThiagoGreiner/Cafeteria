@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- Estrutura paginas internas -->
+ <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -14,11 +15,21 @@
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     </head>
     <body>
-        <!-- Futura Nav -->
+        <!--Navbar -->
+        @include('components.admin-navbar')
 
-        <main class="container mt-5">
-            @yield('content')
-        </main>
+        <div class="d-flex">
+            <!-- Sidebar -->
+            @include('components.admin-sidebar')
+
+            <!-- Conteúdo -->
+            <main class="container mt-5">
+                @yield('content')
+            </main>
+        </div>
+
+        <!-- Footer -->
+        @include('components.footer')
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
