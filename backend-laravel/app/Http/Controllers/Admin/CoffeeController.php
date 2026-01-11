@@ -27,7 +27,7 @@ class CoffeeController extends Controller
             'name'     => 'required|string|max:255',
             'price'    => 'required|numeric',
             'category' => 'required|string',
-            'image'    => 'required|image|max:2048',
+            'image'    => 'required|mimes:jpg,jpeg,png|max:2048',
         ]);
 
         // Upload da imagem
@@ -44,4 +44,10 @@ class CoffeeController extends Controller
             ->route('admin.coffees.index')
             ->with('success', 'Café cadastrado com sucesso!');
     }
+
+    public function edit(Coffee $coffee)
+    {
+        return view('admin.coffees.edit', compact('coffee'));
+    }
+
 }
