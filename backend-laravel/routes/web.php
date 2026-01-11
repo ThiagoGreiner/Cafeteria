@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-//Área ADMIN
+//Área Admin
 Route::middleware(['auth', 'admin'])
     ->prefix('admin')
     ->name('admin.')
@@ -27,7 +27,8 @@ Route::middleware(['auth', 'admin'])
             return view('admin.dashboard');
         })->name('dashboard');
 
-        Route::resource('coffees', CoffeeController::class);
+        Route::resource('coffees', CoffeeController::class)
+            ->except(['show']);
     });
 
 require __DIR__.'/auth.php';
