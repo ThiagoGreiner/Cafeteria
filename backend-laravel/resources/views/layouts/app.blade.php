@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Best Coffee') }}</title>
+        <title>@yield('title', 'Best Coffee')</title>
 
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,9 @@
 
         <div class="d-flex">
             <!-- Sidebar -->
-            @include('components.admin-sidebar')
+            <aside class="admin-sidebar bg-dark">
+                @include('components.admin-sidebar')
+            </aside>
 
             <!-- Conteúdo -->
             <main class="container mt-5">
