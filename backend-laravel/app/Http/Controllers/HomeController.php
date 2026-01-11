@@ -3,12 +3,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\coffee;
 
 class HomeController extends Controller
 {
     public function index()
-    {
-        return view('home');
-    }
+{
+    $coffees = Coffee::all()->groupBy('category');
+
+    return view('home', compact('coffees'));
+}
 }
