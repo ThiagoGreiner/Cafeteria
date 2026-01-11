@@ -1,4 +1,5 @@
 <?php
+// Controller da resources\views\home
 
 namespace App\Http\Controllers;
 
