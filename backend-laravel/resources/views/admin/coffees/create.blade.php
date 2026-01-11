@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Cadastrar Café')
+
 @section('content')
 <div class="container mt-5">
     <h1 class="mb-4">Cadastrar Café</h1>
@@ -33,7 +35,7 @@
         <!-- Imagem -->
         <div class="mb-3">
             <label class="form-label">Imagem</label>
-            <input type="file" name="image" class="form-control" required>
+            <input type="file" name="image" class="form-control" accept="image/*" required>
         </div>
 
         <button class="btn btn-primary">Salvar</button>
