@@ -1,6 +1,17 @@
 :root {
     --bs-link-color: #198754;
     --bs-link-hover-color: #146c43;
+    --admin-navbar-height: 56px;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: 250px;
+    min-height: 100vh;
+}
+
+.admin-sidebar .nav {
+    height: 100%;
 }
 
 .nav-link .btn {
