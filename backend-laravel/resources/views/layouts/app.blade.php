@@ -19,8 +19,8 @@
         @include('components.admin-navbar')
 
         <div class="d-flex">
-            <!-- Sidebar -->
-            <aside class="admin-sidebar bg-dark">
+            <!-- Sidebar desktop -->
+            <aside class="bg-dark text-white vh-100 d-none d-lg-block" style="width:240px">
                 @include('components.admin-sidebar')
             </aside>
 
