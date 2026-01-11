@@ -1,5 +1,4 @@
  <!-- Navbar pública -->
- 
  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         
         <div class="container-fluid">
@@ -29,33 +28,19 @@
               </li>
             </ul>
 
-            @auth
-              @if(auth()->user()->is_admin)
+            <ul class="navbar-nav ms-auto">
+              @guest
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('admin.dashboard') }}">
-                    Admin
-                  </a>
+                  <a class="nav-link" href="{{ route('login') }}">Entrar</a>
                 </li>
-              @endif
-            @endauth
+              @endguest
 
-            @guest
-              <button class="btn">
-                <a class="nav-link" href="{{ route('login') }}">Login</a>
-              </button>
-            @endguest
-
-            @auth
-              <li class="nav-item">
-                <form method="POST" action="{{ route('logout') }}">
-                  @csrf
-                  <button class="nav-link btn btn-link" type="submit">
-                    Sair
-                  </button>
-                </form>
-              </li>
-            @endauth
-
+              @auth
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ route('admin.dashboard') }}">Admin</a>
+                  </li>
+              @endauth
+            
           </div>
 
         </div>
