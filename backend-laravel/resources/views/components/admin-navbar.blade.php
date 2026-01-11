@@ -16,7 +16,23 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
+            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Início</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ route('admin.dashboard') }}">Painel Administrativo</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ route('admin.coffees.index') }}">Cafés</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pedidos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Caixa</a>
           </li>
 
           @auth

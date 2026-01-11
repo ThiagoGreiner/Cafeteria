@@ -1,4 +1,15 @@
-<ul class="nav flex-column"> <li class="nav-item"> <a class="nav-link text-white" href="{{ route('admin.dashboard') }}"> Painel Administrativo </a> </li>
+<ul class="nav flex-column">
+    <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ route('home') }}">
+            Início
+        </a> 
+    </li>    
+
+    <li class="nav-item"> 
+        <a class="nav-link text-white" href="{{ route('admin.dashboard') }}">
+            Painel Administrativo
+        </a> 
+    </li>
 
     <li class="nav-item">
         <a class="nav-link text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#usuariosMenu" role="button" aria-expanded="false" aria-controls="usuariosMenu">
@@ -27,4 +38,15 @@
     <li class="nav-item">
         <a class="nav-link text-white" href="#">Caixa</a>
     </li>
+
+    @auth
+        <li class="nav-item">
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button class="nav-link text-white" type="submit">
+                Sair
+            </button>
+        </form>
+        </li>
+    @endauth
 </ul>
