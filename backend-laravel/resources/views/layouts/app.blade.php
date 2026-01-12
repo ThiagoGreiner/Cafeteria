@@ -14,26 +14,36 @@
         <!-- CSS -->
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     </head>
-    <body>
+    <body class="overflow-hidden">
         <!--Navbar -->
         @include('components.admin-navbar')
 
-        <div class="d-flex">
+        <div class="d-flex admin-layout">
             <!-- Sidebar desktop -->
-            <aside class="bg-dark text-white vh-100 d-none d-lg-block" style="width:240px">
+            <aside class="bg-dark text-white d-none d-lg-flex flex-column admin-sidebar">
                 @include('components.admin-sidebar')
             </aside>
 
-            <!-- Conteúdo -->
-            <main class="container mt-5">
-                @yield('content')
-            </main>
+            <div class="flex-grow-1 d-flex flex-column">
+                <!-- Conteúdo -->
+                <main class="flex-grow-1 p-4 overflow-auto">
+                    @if (session('success'))
+                        <div class="alert alert-success alert-dismissible fade show">
+                            {{ session('success') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    @endif
+
+                    @yield('content')
+                </main>
+        
+
+                <!-- Footer -->
+                @include('components.footer')
+            </div>
         </div>
 
-        <!-- Footer -->
-        @include('components.footer')
-
         <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
