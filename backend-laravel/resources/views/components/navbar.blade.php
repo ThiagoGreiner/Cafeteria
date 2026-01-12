@@ -37,11 +37,10 @@
 
               @auth
                   <li class="nav-item">
-                      <a class="nav-link" href="{{ route('admin.dashboard') }}">Admin</a>
+                      <a class="nav-link" href="{{ route('admin.dashboard') }}">Painel Administrativo</a>
                   </li>
               @endauth
-            
+            </ul>
           </div>
-
         </div>
     </nav>
