@@ -1,17 +1,25 @@
 :root {
     --bs-link-color: #198754;
     --bs-link-hover-color: #146c43;
-    --admin-navbar-height: 56px;
+}
+
+.admin-layout {
+    margin-top: 56px; 
+    height: calc(100vh - 56px);
+}
+
+.admin-navbar {
+    height: 76px;
+    z-index: 1050;
 }
 
 /* Sidebar */
 .admin-sidebar {
-    width: 250px;
-    min-height: 100vh;
-}
-
-.admin-sidebar .nav {
-    height: 100%;
+    width: 200px;
+    height: calc(100vh - 76px);
+    position: sticky;
+    top: 76px;
+    overflow-y: auto;
 }
 
 .nav-link .btn {
@@ -21,10 +29,6 @@
     --bs-btn-hover-border-color: #146c43;
     --bs-btn-active-bg: #0c5734;
     --bs-btn-active-border-color: #0c5734; 
-}
-
-main {
-    margin-top: 4.8rem;
 }
 
 section {
@@ -56,6 +60,10 @@ section {
 .card-menu img {
     height: 300px;
     object-fit: cover;
+}
+
+footer {
+    padding: 15px;
 }
 
 footer img {
