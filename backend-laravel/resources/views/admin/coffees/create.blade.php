@@ -3,7 +3,7 @@
 @section('title', 'Cadastrar Café')
 
 @section('content')
-<div class="container mt-5">
+<div class="container mb-5">
     <h1 class="mb-4">Cadastrar Café</h1>
 
     <form action="{{ route('admin.coffees.store') }}" method="POST" enctype="multipart/form-data">
