@@ -1,4 +1,4 @@
-<ul class="nav flex-column">
+<ul class="nav flex-column admin-sidebar">
     <li class="nav-item"> 
         <a class="nav-link text-white" href="{{ route('home') }}">
             Início

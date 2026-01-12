@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark fixed-top admin-navbar">
   <div class="container-fluid">
 
     <a class="navbar-brand" href="#"><img src="{{ asset('assets/img/logo.png') }}" alt="Logotipo Cafeteria"></a>
